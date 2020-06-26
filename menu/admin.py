@@ -1,3 +1,6 @@
 from django.contrib import admin
+from menu.models import Drink, Coffee, Bubbletea
 
-# Register your models here.
+admin.site.register(Drink)
+admin.site.register(Coffee)
+admin.site.register(Bubbletea)
