@@ -5,13 +5,10 @@
     <title>Drink Delete</title>
 </head>
 <body>
-    <h1>{{ drink }}</h1>
-
-    {% if drink.image != '' %}
-        <img src="{{ drink.image.url }}" alt="" style="height: 200px">
-    {% endif %}
-    <form action="" class="po">
+    <form action="" class="post">
         {% csrf_token %}
+        {{ drink }} <br/>
+        정말 지울까요?
         <button type="submit">Delete</button>
         <button type="button" onclick="history.back()">Cancel</button>
     </form>

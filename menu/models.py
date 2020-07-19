@@ -12,8 +12,10 @@ class Drink(models.Model):
     def __str__(self):
         return f'카테고리: {self.category}, 이름: {self.name}, 가격: {self.price}'
 
+
 class Coffee(Drink):
     pass
+
 
 class Bubbletea(Drink):
     pass
